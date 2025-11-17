@@ -2,17 +2,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assests/css/homepage.css';
+import Navbar from '../components/layout/navbar';
 const Home = () => {
   return (
     <div className="homepage-wrapper">
-      {/* Navbar is typically included outside the main content wrapper, 
-          but for this demonstration, we'll ensure it's rendered. */}
-      {/* <Navbar /> -- NOTE: The Navbar is already rendered in App.js above the Routes */}
+      <Navbar />
       
       <div className="hero-section text-center">
         <div className="hero-content container">
           
-          {/* Top Corner Image/Icon (Placeholder) */}
+            {/* Top Corner Image/Icon (Placeholder) */}
           <div className="top-corner-image-wrapper">
             {/*  (Replace with actual image path later) */}
           </div>

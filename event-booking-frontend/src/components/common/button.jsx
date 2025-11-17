@@ -1,6 +1,6 @@
 // src/components/common/Button.js
 import React from 'react';
-import '../assests/css/button.css';
+import '../../assests/css/button.css';
 // Reusable button component that takes type (primary, danger, secondary)
 const Button = ({ children, type = 'button', btnStyle = 'primary', onClick, disabled = false }) => {
   

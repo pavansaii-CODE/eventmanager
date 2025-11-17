@@ -8,11 +8,12 @@ import Register from './pages/auth/register';
 import EventList from './pages/events/eventlist';
 import VendorList from './pages/vendor/vendorlist';
 import Profile from './pages/user/profile';
-
+import EventDetail from './pages/events/eventregister';
+import CreateEventForm from './pages/admin/createevent';
 function App() {
   return (
     <Router>
-      <Navbar />
+  
       <div className="container">
         <Routes>
           {/* Public Routes */}
@@ -34,6 +35,16 @@ function App() {
           <Route path="/profile" element={
             <PrivateRoute>
               <Profile />
+            </PrivateRoute>
+          } />
+          <Route path="/events/:eventId" element={
+            <PrivateRoute>
+              <EventDetail />
+            </PrivateRoute>
+          } />
+          <Route path="/admin/createevent" element={
+            <PrivateRoute>
+              <CreateEventForm />
             </PrivateRoute>
           } />
         </Routes>

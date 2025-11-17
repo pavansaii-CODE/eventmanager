@@ -32,18 +32,27 @@ router.post(
 // --- Client Access ---
 
 /**
- * @route POST /api/events/register
+ * @route POST /api/events/:eventId/register
  * @desc Register for an event
  * @access Private (Client Only)
  */
 router.post(
-  '/register',
+  '/:eventId/register',
   verifyToken,  // Must be logged in
   isClient,     // Must be a Client
   eventController.registerForEvent
 );
 
-// You would add PUT/DELETE routes here, protected by verifyToken and isAdmin
+// --- Get Single Event by ID (Public) ---
+/**
+ * @route GET /api/events/:id
+ * @desc Get a single event by ID
+ * @access Public
+ */
+router.get('/:id', eventController.getEventById);
+
+
+// --- Update/Delete Events (Admin Only) ---
 // router.put('/:id', verifyToken, isAdmin, eventController.updateEvent);
 
 module.exports = router;

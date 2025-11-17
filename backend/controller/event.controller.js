@@ -70,4 +70,21 @@ exports.registerForEvent = async (req, res) => {
   }
 };
 
-// Add updateEvent, deleteEvent, getEventById for full CRUD...
+// --- 4. Get Single Event by ID (Public) ---
+exports.getEventById = async (req, res) => {
+  try {
+    const event = await Event.findById(req.params.id);
+    if (!event) {
+      return res.status(404).json({ msg: 'Event not found' });
+    }
+    res.json(event);
+  } catch (err) {
+    console.error(err.message);
+    if (err.kind === 'ObjectId') {
+      return res.status(404).json({ msg: 'Event not found' });
+    }
+    res.status(500).send('Server Error');
+  }
+};
+
+// Add updateEvent, deleteEvent for full CRUD...

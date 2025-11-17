@@ -1,0 +1,122 @@
+/* Event Details Page */
+.event-details-page {
+  padding: 2rem 0;
+}
+
+.event-details-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.event-header {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.event-header h1 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+}
+
+.event-meta {
+  color: #6c757d;
+  margin: 0;
+}
+
+.event-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.event-description h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.event-details-sidebar {
+  position: relative;
+}
+
+.event-info-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.event-info-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.event-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.event-info-card li {
+  margin-bottom: 0.75rem;
+  color: #495057;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Registration Page */
+.registration-form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.event-summary {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.registration-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-price {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  text-align: right;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-content,
+  .registration-form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info-card {
+    position: static;
+    margin-top: 2rem;
+  }
+}
