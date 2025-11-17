@@ -1,0 +1,110 @@
+/* --- Homepage Specific Styles --- */
+
+.homepage-wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hero-section {
+    /* Blue Gradient Background */
+    background: linear-gradient(135deg, #4a6fa5 0%, #007bff 100%);
+    color: white;
+    padding: 80px 0 100px 0; /* Plenty of vertical space */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2; /* Ensure content is above any background layers */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-subtext {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.top-corner-image-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    /* Background for the actual image/icon */
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* You would replace the image background here with your actual image */
+
+/* Hero Button Styling (Overrides general button) */
+.btn-hero {
+    font-size: 1.15rem;
+    padding: 15px 35px;
+    margin: 0 10px;
+}
+
+/* Alternative Primary Button (White fill for contrast) */
+.btn-primary-alt {
+    background-color: white;
+    color: #4a6fa5;
+    border: 2px solid white;
+}
+.btn-primary-alt:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+/* Alternative Secondary Button (Outline for less focus) */
+.btn-secondary-alt {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.btn-secondary-alt:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.small-text {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+/* Feature Grid for intro section */
+.section-intro {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-grid div {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+}
+
+.feature-grid h3 {
+    color: #007bff;
+    font-size: 1.4rem;
+}

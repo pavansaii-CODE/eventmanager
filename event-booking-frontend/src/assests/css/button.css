@@ -1,0 +1,52 @@
+/* --- Buttons --- */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Slightly more rounded */
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    text-decoration: none; /* For link buttons */
+    display: inline-block; /* Ensures consistent padding */
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Primary Style (Used for main actions like Login, Register, Submit) */
+.btn-primary {
+    background-color: #4a6fa5; /* Primary blue */
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #3b5a85; /* Darker blue on hover */
+}
+
+/* Danger Style (Used for actions like Logout, Delete) */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Secondary Style (Used for less critical actions like Find Vendors, Cancel) */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}

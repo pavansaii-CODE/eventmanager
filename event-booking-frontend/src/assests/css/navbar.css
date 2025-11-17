@@ -1,0 +1,64 @@
+/* --- Navbar Styles --- */
+
+.navbar {
+    background: #4a6fa5; /* A pleasant, decent blue color */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ensure the links and logo are aligned and centered */
+.navbar .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Styling for the main app title/logo link */
+.navbar h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* List of navigation links */
+.nav-links {
+    display: flex;
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+/* Styling for individual links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #e0e0e0; /* Lighter white on hover */
+    text-decoration: underline;
+}
+
+/* Style for the Logout pseudo-link (<a> with onClick) */
+.nav-links a[href="#!"] {
+    cursor: pointer;
+}
+/* --- Footer Styles --- */
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #e9ecef; /* Light text */
+    padding: 20px 0;
+    font-size: 0.9rem;
+    position: relative; /* Or absolute/fixed if needed */
+    bottom: 0;
+    width: 100%;
+}
